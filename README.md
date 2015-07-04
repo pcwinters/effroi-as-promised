@@ -4,6 +4,6 @@ Effroi-as-promised is a lightweight wrapper around the [effroi](https://github.c
 ```javascript
 var effroiAsPromised = require('effroi-as-promised')(effroi);
 effroiAsPromised.click($('.something'))
-	.then(function(){ return effroiAsPromised.click('.else')});
-	.then(function(){ return effroiAsPromised.click('.again')});
+	.then(function(){ return effroiAsPromised.click($('.else'))})
+	.then(function(){ return effroiAsPromised.click($('.again'))});
 ```
