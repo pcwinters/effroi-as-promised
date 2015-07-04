@@ -1,6 +1,6 @@
 {
   "name": "effroi-as-promised",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Promise and Jquery wrappers for the EffroiJS device event simulation library",
   "main": "index.js",
   "scripts": {
