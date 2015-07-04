@@ -1,7 +1,7 @@
 var $ = require('jquery');
 var _ = require('lodash');
 
-function factory(effroi){
+var factory = function(effroi){
 	// Wrap effroi methods to allow for passing jquery element results and returning promises
 	var effroiAsPromised = {};
 	_.each(_.keys(effroi), function(deviceKey){
@@ -26,6 +26,7 @@ function factory(effroi){
 			});
 		});
 	});
+	return effroiAsPromised;
 };
 
 module.exports = factory;
